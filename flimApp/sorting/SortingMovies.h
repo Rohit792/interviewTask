@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SortingMovies : NSObject
 
+-(NSMutableArray*)sortByRatting:(NSArray*) arrayOfMovie;
+
 @end
 
 NS_ASSUME_NONNULL_END

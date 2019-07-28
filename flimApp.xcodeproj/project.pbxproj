@@ -14,6 +14,12 @@
 		0429368A22EDAD0600B2EB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429368822EDAD0600B2EB0A /* LaunchScreen.storyboard */; };
 		0429369522EDAD0700B2EB0A /* flimAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429369422EDAD0700B2EB0A /* flimAppTests.swift */; };
 		042936A022EDAD0700B2EB0A /* flimAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429369F22EDAD0700B2EB0A /* flimAppUITests.swift */; };
+		042936C722EDCF2400B2EB0A /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042936C622EDCF2400B2EB0A /* constant.swift */; };
+		042936CB22EDD0C200B2EB0A /* movieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042936C922EDD0C200B2EB0A /* movieTableViewCell.swift */; };
+		042936CC22EDD0C200B2EB0A /* movieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042936CA22EDD0C200B2EB0A /* movieTableViewCell.xib */; };
+		042936CE22EDD76C00B2EB0A /* dynamicLybrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042936CD22EDD76C00B2EB0A /* dynamicLybrary.framework */; };
+		042936D022EDD77000B2EB0A /* dynamicLybrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 042936CD22EDD76C00B2EB0A /* dynamicLybrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		042936D522EDE8A400B2EB0A /* SortingMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = 042936D422EDE8A400B2EB0A /* SortingMovies.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		042936B122EDAD3500B2EB0A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				042936D022EDD77000B2EB0A /* dynamicLybrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0429367C22EDACEE00B2EB0A /* flimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0429367F22EDACEE00B2EB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +67,13 @@
 		0429369B22EDAD0700B2EB0A /* flimAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flimAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0429369F22EDAD0700B2EB0A /* flimAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flimAppUITests.swift; sourceTree = "<group>"; };
 		042936A122EDAD0700B2EB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042936C622EDCF2400B2EB0A /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
+		042936C922EDD0C200B2EB0A /* movieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieTableViewCell.swift; sourceTree = "<group>"; };
+		042936CA22EDD0C200B2EB0A /* movieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = movieTableViewCell.xib; sourceTree = "<group>"; };
+		042936CD22EDD76C00B2EB0A /* dynamicLybrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dynamicLybrary.framework; sourceTree = "<group>"; };
+		042936D222EDE8A300B2EB0A /* flimApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flimApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		042936D322EDE8A400B2EB0A /* SortingMovies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortingMovies.h; sourceTree = "<group>"; };
+		042936D422EDE8A400B2EB0A /* SortingMovies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortingMovies.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042936CE22EDD76C00B2EB0A /* dynamicLybrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +125,13 @@
 		0429367E22EDACEE00B2EB0A /* flimApp */ = {
 			isa = PBXGroup;
 			children = (
+				042936D122EDE85300B2EB0A /* sorting */,
+				042936C522EDCF1000B2EB0A /* Constant */,
+				042936C822EDD09B00B2EB0A /* cell */,
 				0429367F22EDACEE00B2EB0A /* AppDelegate.swift */,
 				0429368122EDACEE00B2EB0A /* ViewController.swift */,
 				0429368322EDACEE00B2EB0A /* Main.storyboard */,
+				042936CD22EDD76C00B2EB0A /* dynamicLybrary.framework */,
 				0429368622EDAD0600B2EB0A /* Assets.xcassets */,
 				0429368822EDAD0600B2EB0A /* LaunchScreen.storyboard */,
 				0429368B22EDAD0600B2EB0A /* Info.plist */,
@@ -125,6 +157,33 @@
 			path = flimAppUITests;
 			sourceTree = "<group>";
 		};
+		042936C522EDCF1000B2EB0A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				042936C622EDCF2400B2EB0A /* constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		042936C822EDD09B00B2EB0A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				042936C922EDD0C200B2EB0A /* movieTableViewCell.swift */,
+				042936CA22EDD0C200B2EB0A /* movieTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		042936D122EDE85300B2EB0A /* sorting */ = {
+			isa = PBXGroup;
+			children = (
+				042936D322EDE8A400B2EB0A /* SortingMovies.h */,
+				042936D422EDE8A400B2EB0A /* SortingMovies.m */,
+				042936D222EDE8A300B2EB0A /* flimApp-Bridging-Header.h */,
+			);
+			path = sorting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +194,7 @@
 				0429367822EDACEE00B2EB0A /* Sources */,
 				0429367922EDACEE00B2EB0A /* Frameworks */,
 				0429367A22EDACEE00B2EB0A /* Resources */,
+				042936B122EDAD3500B2EB0A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +253,7 @@
 				TargetAttributes = {
 					0429367B22EDACEE00B2EB0A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0429368F22EDAD0700B2EB0A = {
 						CreatedOnToolsVersion = 10.1;
@@ -231,6 +292,7 @@
 			files = (
 				0429368A22EDAD0600B2EB0A /* LaunchScreen.storyboard in Resources */,
 				0429368722EDAD0600B2EB0A /* Assets.xcassets in Resources */,
+				042936CC22EDD0C200B2EB0A /* movieTableViewCell.xib in Resources */,
 				0429368522EDACEE00B2EB0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0429368222EDACEE00B2EB0A /* ViewController.swift in Sources */,
+				042936C722EDCF2400B2EB0A /* constant.swift in Sources */,
+				042936CB22EDD0C200B2EB0A /* movieTableViewCell.swift in Sources */,
 				0429368022EDACEE00B2EB0A /* AppDelegate.swift in Sources */,
+				042936D522EDE8A400B2EB0A /* SortingMovies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +497,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M6CF85388A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/flimApp",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = flimApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +512,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = filmApp.www.flimApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "flimApp/sorting/flimApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +523,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M6CF85388A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/flimApp",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = flimApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = filmApp.www.flimApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "flimApp/sorting/flimApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
